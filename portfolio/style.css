@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins' ,sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background: antiquewhite;
+    color: #333;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    background: transparent;
+    display: flex;
+    align-items:center ;
+    z-index: 100;
+}
+.logo{
+    font-size: 2.5rem;
+    color: #240f69;
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+.navbar a:hover{
+    background: transparent;
+    color: black;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 7% 2rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+}
+.home .homecontent{
+    max-width: 60rem;
+}
+.homecontent h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: .3;
+}
+.homecontent h1{
+    font-size: 6rem;
+    font-weight: 700;
+}
+.homecontent p{
+    font-size: 2rem;
+}
+.homecontent .socialmedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid rgba(0,0,0,.2);
+    font-size: 2rem;
+    color: #240f69;
+    margin: 2.5rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}    
+.homecontent .socialmedia a:hover{
+    background: #240f69;
+    color: white;
+}
+.btn{
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: #240f69;
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.2);
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+.btn:hover{
+    background:transparent ;
+    color: #240f69;
+    border-color: #240f69;
+}
+.home .profession-container{
+    position: absolute;
+    top: 0%;
+    right: -28%;
+    transform: translate(-50%);
+    width: 650px;
+    height: 650px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.home .profession-container .profession-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 650px;
+    height: 650px;
+    background: transparent;
+    border-radius: 50%;
+}
+.home .profession-box .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 325px solid rgb(50, 109, 192);
+    border-right: 325px solid rgb(50, 109, 192);
+    border-bottom: 325px solid rgb(50, 109, 192);
+    border-left: 325px solid transparent;
+}
+.home-img img{
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 80%;
+    pointer-events: none;
+
+}
+span {
+    color: #240f69;
+
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    background: rgb(50, 109, 192);
+}
+.about .about-img {
+    width: 50vw;
+}
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3 {
+    font-size: 2rem;
+}
+.about-content p {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 2rem 0.3rem;
+}
+.services{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.services h2 {
+    margin-bottom: 5rem;
+}
+.services .services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.services-container .service-box {
+    flex:  2 2 25rem;
+    background:antiquewhite;
+    padding: 4rem 3rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0.1rem .5rem #333;
+    text-align: center;
+    border-top: .6rem solid #240f69;
+    border-bottom: .6rem solid #240f69;;
+}
+.services-container .service-box:hover{
+    box-shadow: 0.1rem 2rem #333;
+    transform: scale(1.02);
+}
+.service-box i {
+    font-size: 7rem;
+    color: #240f69;
+}
+.service-box h3{
+    font-size: 2.6rem;
+    transition: .5s ease;
+}
+.service-box:hover h3{
+    color: #240f69;
+}
+.service-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0.3rem;
+}
+.portfolio {
+    padding-bottom: 10rem;
+}
+.portfolio h2 {
+    margin-bottom: 1rem;
+}
+.portfolio .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.portfolio-container .portfolio-box {
+    position: relative;
+    display: flex;
+    border-radius: 1.5rem;
+    box-shadow: #333;
+    overflow: hidden;
+}
+.portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+.portfolio-box:hover img {
+    transform: scale(1.1);
+
+} 
+.portfolio-box .potfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1),#240f69);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.4rem;
+    opacity: 0;
+    transition: .5s ease;
+}
+.portfolio-box:hover .potfolio-layer {
+    opacity: 1;
+}
+.potfolio-layer h4 {
+    font-size: 3rem;
+
+}
+.potfolio-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+.potfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background:white;
+    border-radius: 50%;
+}
+.potfolio-layer a i {
+    font-size: 2rem;
+    color: #333;
+}
+.contact h2 {
+    margin-bottom: 3rem;
+}
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+}
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background: antiquewhite;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0.1rem .5rem #333;
+}
+.contact form .input-box input {
+    width: 49%;
+}
+.contact form textarea {
+    resize: none;
+}
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.footer p{
+    color: black;
+    margin-bottom: 5rem;
+    
+}
